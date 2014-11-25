@@ -39,6 +39,11 @@
     [self addCard:card atTop:NO];
 }
 
+- (void)addCardAsyn:(Card *)card
+{
+    [self performSelector:@selector(addCard:) withObject:card afterDelay:3];
+}
+
 - (Card *)drawRandomCard
 {
     Card *randomCard = nil;

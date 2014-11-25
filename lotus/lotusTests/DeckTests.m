@@ -11,6 +11,7 @@
 #import "Deck.h"
 #import "Card.h"
 #import "OCMock.h"
+#import <objc/runtime.h>
 
 
 @interface DeckTests : XCTestCase
@@ -18,6 +19,12 @@
 @end
 
 @implementation DeckTests
+
+XCTestExpectation *expectation;
+
+- (void)hackAddCard:(Card *)card{
+    [expectation fulfill];
+}
 
 - (void)setUp {
     [super setUp];
@@ -29,7 +36,7 @@
     [super tearDown];
 }
 
-- (void)testaddCard {
+- (void)testAddCard {
     //init the Card and Deck
     Card * testCard = [[Card alloc] init];
     Deck * testDeck = [[Deck alloc] init];
@@ -43,7 +50,7 @@
     [deckMock verify];
 }
 
-- (void)testaddCardAtTop {
+- (void)testAddCardAtTop {
     //init the Card and Deck
     Card * testCard = [[Card alloc] init];
     Deck * testDeck = [[Deck alloc] init];
@@ -58,6 +65,26 @@
     [cardsMock verify];
 }
 
+- (void)testAddCardAsyn{
+    Method orig_method, target_method;
+    orig_method = class_getInstanceMethod([Deck class], @selector(addCard:));
+    target_method = class_getInstanceMethod([DeckTests class], @selector(hackAddCard:));
+    method_exchangeImplementations(orig_method, target_method);
+    expectation = [self expectationWithDescription:@"Add card in background thread"];
+    Card * testCard = [[Card alloc] init];
+    Deck * testDeck = [[Deck alloc] init];
+   
+    [testDeck addCardAsyn:testCard];
+    [self waitForExpectationsWithTimeout:5
+                                 handler:^(NSError *error) {
+                                     // handler is called on _either_ success or failure
+                                     if (error != nil) {
+                                         XCTFail(@"timeout error: %@", error);
+                                     }
+                                 }];
+    
+    method_exchangeImplementations(orig_method, target_method);
+}
 
 
 @end

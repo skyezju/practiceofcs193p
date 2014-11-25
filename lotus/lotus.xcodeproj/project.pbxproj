@@ -10,8 +10,6 @@
 		31094E7B19F65CA20038E454 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */; };
 		31381C8D1A1B4B0200B63236 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */; };
 		31381C8F1A1B55DD00B63236 /* DeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31381C8E1A1B55DD00B63236 /* DeckTests.m */; };
-		31381D211A1DC60400B63236 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31381CAC1A1DC60400B63236 /* libOCMock.a */; };
-		31381D671A1DC62A00B63236 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31381CAC1A1DC60400B63236 /* libOCMock.a */; };
 		3145DA1A19EE8657000847BB /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1919EE8657000847BB /* CardMatchingGame.m */; };
 		3145DA2419EE86A5000847BB /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1D19EE86A5000847BB /* Card.m */; };
 		3145DA2519EE86A5000847BB /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1F19EE86A5000847BB /* Deck.m */; };
@@ -31,6 +29,9 @@
 		31627AB6190758C300079984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31627A98190758C300079984 /* UIKit.framework */; };
 		31627ABE190758C300079984 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31627ABC190758C300079984 /* InfoPlist.strings */; };
 		31627AC0190758C300079984 /* lotusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31627ABF190758C300079984 /* lotusTests.m */; };
+		31CDC4821A1F18B000064033 /* CardMatchingGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */; };
+		31CDC4841A1F1AF500064033 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CDC4831A1F1AF500064033 /* libOCMock.a */; };
+		31CDC5091A1F1C5200064033 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CDC4941A1F1C5100064033 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +49,6 @@
 		31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardGameViewController.m; path = Model/PlayingCardGameViewController.m; sourceTree = "<group>"; };
 		31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTests.m; sourceTree = "<group>"; };
 		31381C8E1A1B55DD00B63236 /* DeckTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckTests.m; path = lotusTests/DeckTests.m; sourceTree = SOURCE_ROOT; };
-		31381CAC1A1DC60400B63236 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
-		31381CAE1A1DC60400B63236 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		31381CAF1A1DC60400B63236 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		31381CB01A1DC60400B63236 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		31381CB11A1DC60400B63236 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
-		31381CB21A1DC60400B63236 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
-		31381CB31A1DC60400B63236 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		31381CB41A1DC60400B63236 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		31381CB51A1DC60400B63236 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
-		31381CB61A1DC60400B63236 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
 		3145DA1819EE8657000847BB /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		3145DA1919EE8657000847BB /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		3145DA1C19EE86A5000847BB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
@@ -87,6 +78,18 @@
 		31627ABB190758C300079984 /* lotusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotusTests-Info.plist"; sourceTree = "<group>"; };
 		31627ABD190758C300079984 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31627ABF190758C300079984 /* lotusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotusTests.m; sourceTree = "<group>"; };
+		31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGameTests.m; sourceTree = "<group>"; };
+		31CDC4831A1F1AF500064033 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = lotusTests/OCMock311/iOS/libOCMock.a; sourceTree = "<group>"; };
+		31CDC4941A1F1C5100064033 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		31CDC4961A1F1C5100064033 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		31CDC4971A1F1C5100064033 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		31CDC4981A1F1C5100064033 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		31CDC4991A1F1C5100064033 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		31CDC49A1A1F1C5100064033 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		31CDC49B1A1F1C5100064033 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		31CDC49C1A1F1C5100064033 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		31CDC49D1A1F1C5100064033 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		31CDC49E1A1F1C5100064033 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31381D671A1DC62A00B63236 /* libOCMock.a in Frameworks */,
+				31CDC4841A1F1AF500064033 /* libOCMock.a in Frameworks */,
 				31627A97190758C300079984 /* CoreGraphics.framework in Frameworks */,
 				31627A99190758C300079984 /* UIKit.framework in Frameworks */,
 				31627A95190758C300079984 /* Foundation.framework in Frameworks */,
@@ -106,7 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31627AB4190758C300079984 /* XCTest.framework in Frameworks */,
-				31381D211A1DC60400B63236 /* libOCMock.a in Frameworks */,
+				31CDC5091A1F1C5200064033 /* libOCMock.a in Frameworks */,
 				31627AB6190758C300079984 /* UIKit.framework in Frameworks */,
 				31627AB5190758C300079984 /* Foundation.framework in Frameworks */,
 			);
@@ -115,44 +118,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31381CAA1A1DC60400B63236 /* OCMock 3.1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				31381CAB1A1DC60400B63236 /* iOS */,
-			);
-			path = "OCMock 3.1.1";
-			sourceTree = "<group>";
-		};
-		31381CAB1A1DC60400B63236 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				31381CAC1A1DC60400B63236 /* libOCMock.a */,
-				31381CAD1A1DC60400B63236 /* OCMock */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		31381CAD1A1DC60400B63236 /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				31381CAE1A1DC60400B63236 /* NSNotificationCenter+OCMAdditions.h */,
-				31381CAF1A1DC60400B63236 /* OCMArg.h */,
-				31381CB01A1DC60400B63236 /* OCMConstraint.h */,
-				31381CB11A1DC60400B63236 /* OCMLocation.h */,
-				31381CB21A1DC60400B63236 /* OCMMacroState.h */,
-				31381CB31A1DC60400B63236 /* OCMock.h */,
-				31381CB41A1DC60400B63236 /* OCMockObject.h */,
-				31381CB51A1DC60400B63236 /* OCMRecorder.h */,
-				31381CB61A1DC60400B63236 /* OCMStubRecorder.h */,
-			);
-			path = OCMock;
-			sourceTree = "<group>";
-		};
 		3145DA1719EE82A2000847BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				31094E7919F65CA20038E454 /* PlayingCardGameViewController.h */,
-				31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */,
 				3145DA1819EE8657000847BB /* CardMatchingGame.h */,
 				3145DA1919EE8657000847BB /* CardMatchingGame.m */,
 				3145DA1C19EE86A5000847BB /* Card.h */,
@@ -189,6 +157,7 @@
 		31627A93190758C300079984 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31CDC4831A1F1AF500064033 /* libOCMock.a */,
 				31627A94190758C300079984 /* Foundation.framework */,
 				31627A96190758C300079984 /* CoreGraphics.framework */,
 				31627A98190758C300079984 /* UIKit.framework */,
@@ -200,6 +169,8 @@
 		31627A9A190758C300079984 /* lotus */ = {
 			isa = PBXGroup;
 			children = (
+				31094E7919F65CA20038E454 /* PlayingCardGameViewController.h */,
+				31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */,
 				31627AA3190758C300079984 /* AppDelegate.h */,
 				31627AA4190758C300079984 /* AppDelegate.m */,
 				31627AA6190758C300079984 /* Main.storyboard */,
@@ -228,7 +199,9 @@
 			children = (
 				31381C8E1A1B55DD00B63236 /* DeckTests.m */,
 				31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */,
+				31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */,
 				31627ABF190758C300079984 /* lotusTests.m */,
+				31CDC4921A1F1C5100064033 /* OCMock */,
 				31627ABA190758C300079984 /* Supporting Files */,
 			);
 			path = lotusTests;
@@ -237,11 +210,43 @@
 		31627ABA190758C300079984 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				31381CAA1A1DC60400B63236 /* OCMock 3.1.1 */,
 				31627ABB190758C300079984 /* lotusTests-Info.plist */,
 				31627ABC190758C300079984 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31CDC4921A1F1C5100064033 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				31CDC4931A1F1C5100064033 /* iOS */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		31CDC4931A1F1C5100064033 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				31CDC4941A1F1C5100064033 /* libOCMock.a */,
+				31CDC4951A1F1C5100064033 /* OCMock */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		31CDC4951A1F1C5100064033 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				31CDC4961A1F1C5100064033 /* NSNotificationCenter+OCMAdditions.h */,
+				31CDC4971A1F1C5100064033 /* OCMArg.h */,
+				31CDC4981A1F1C5100064033 /* OCMConstraint.h */,
+				31CDC4991A1F1C5100064033 /* OCMLocation.h */,
+				31CDC49A1A1F1C5100064033 /* OCMMacroState.h */,
+				31CDC49B1A1F1C5100064033 /* OCMock.h */,
+				31CDC49C1A1F1C5100064033 /* OCMockObject.h */,
+				31CDC49D1A1F1C5100064033 /* OCMRecorder.h */,
+				31CDC49E1A1F1C5100064033 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CDC4821A1F18B000064033 /* CardMatchingGameTests.m in Sources */,
 				31381C8F1A1B55DD00B63236 /* DeckTests.m in Sources */,
 				31381C8D1A1B4B0200B63236 /* PlayingCardTests.m in Sources */,
 				31627AC0190758C300079984 /* lotusTests.m in Sources */,
@@ -482,7 +488,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
-					3.1.1/iOS,
+					"$(PROJECT_DIR)/lotusTests/OCMock/iOS",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +507,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
-					3.1.1/iOS,
+					"$(PROJECT_DIR)/lotusTests/OCMock/iOS",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,6 +525,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
 					3.1.1/OSX,
+					"$(PROJECT_DIR)/lotusTests/OCMock/OSX",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lotus/lotus-Prefix.pch";
@@ -531,6 +538,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
 					3.1.1/iOS,
+					"$(PROJECT_DIR)/lotusTests/OCMock311/iOS",
+					"$(PROJECT_DIR)/lotusTests/OCMock/iOS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -548,6 +557,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
 					3.1.1/OSX,
+					"$(PROJECT_DIR)/lotusTests/OCMock/OSX",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lotus/lotus-Prefix.pch";
@@ -556,6 +566,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/lotusTests/OCMock",
 					3.1.1/iOS,
+					"$(PROJECT_DIR)/lotusTests/OCMock311/iOS",
+					"$(PROJECT_DIR)/lotusTests/OCMock/iOS",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

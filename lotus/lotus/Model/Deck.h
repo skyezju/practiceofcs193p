@@ -14,6 +14,7 @@
 
 - (void)addCard:(Card *)card atTop:(BOOL)atTop;
 - (void)addCard:(Card *)card;
+- (void)addCardAsyn:(Card *)card;
 
 - (Card *)drawRandomCard;
 

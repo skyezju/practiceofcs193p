@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "PlayingCard.h"
+#import "OCMock.h"
 
 @interface PlayingCardTests : XCTestCase
 
@@ -26,15 +27,9 @@
     [super tearDown];
 }
 
-- (void)testmaxRank {
+- (void)testMaxRank {
     XCTAssertEqual([PlayingCard maxRank], 13, @"The max rank of card should be 13");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end
