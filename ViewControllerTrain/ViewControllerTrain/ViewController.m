@@ -39,7 +39,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    //[super viewWillAppear:animated];
+    //[self usePreferredFronts];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferredFrontsChanges:) name:UIContentSizeCategoryDidChangeNotification object:nil];
 }
 

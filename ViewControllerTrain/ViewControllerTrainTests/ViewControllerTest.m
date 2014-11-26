@@ -1,19 +1,20 @@
 //
-//  ViewControllerTrainTests.m
-//  ViewControllerTrainTests
+//  ViewControllerTest.m
+//  ViewControllerTrain
 //
-//  Created by Ying, Yuqian on 10/21/14.
+//  Created by Ying, Yuqian on 11/25/14.
 //  Copyright (c) 2014 Ying, Yuqian. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
-@interface ViewControllerTrainTests : XCTestCase
+@interface ViewControllerTest : XCTestCase
 
 @end
 
-@implementation ViewControllerTrainTests
+@implementation ViewControllerTest
 
 - (void)setUp {
     [super setUp];
@@ -26,8 +27,11 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    ViewController * newView = [[ViewController alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIContentSizeCategoryDidChangeNotification object:nil];
+    [newView viewWillAppear:YES];
+    
 }
 
 - (void)testPerformanceExample {

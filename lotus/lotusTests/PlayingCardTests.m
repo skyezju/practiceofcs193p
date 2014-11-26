@@ -31,5 +31,16 @@
     XCTAssertEqual([PlayingCard maxRank], 13, @"The max rank of card should be 13");
 }
 
+- (void)testMatchRank{
+    PlayingCard * testCard = [[PlayingCard alloc] init];
+    PlayingCard * matchCard = [[PlayingCard alloc] init];
+    testCard.suit = [PlayingCard validSuits][0];
+    [testCard setRank:10];
+    matchCard.suit = [PlayingCard validSuits][2];
+    [matchCard setRank:10];
+    //[testCard match:@[matchCard]];
+    XCTAssertEqual([testCard match:@[matchCard]], 4, @"Rank match return 4");
+}
 
 @end
+

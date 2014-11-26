@@ -14,5 +14,7 @@
 //protected
 //for subclasses
 - (Deck *)createDeck;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)preferredFrontsChanges:(NSNotification  *)notification;
 
 @end

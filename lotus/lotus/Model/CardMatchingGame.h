@@ -11,13 +11,12 @@
 #import "Card.h"
 #import "PlayingCard.h"
 
-@interface CardMatchingGame : NSObject
+@interface CardMatchingGame : NSObject 
 
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
 
 - (void)chooseCardAtIndex:(NSUInteger)index;
 - (PlayingCard *)cardAtIndex:(NSUInteger)index;
-
 
 @property (nonatomic, readonly)NSInteger score;
 
