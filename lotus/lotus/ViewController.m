@@ -12,12 +12,13 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *FlipsLable;
+@property (weak, nonatomic) IBOutlet UILabel *scorelable;
+@property (weak, nonatomic) IBOutlet UILabel *lastScore;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (weak, nonatomic) IBOutlet UILabel *scorelable;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *modeID;
+
 
 @end
 
@@ -25,7 +26,7 @@
 
 - (IBAction)reStart:(UIButton *)sender {
     [self setFlipCount:0];
-    _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
+    _game = nil;
     [self updateUI];
     
 }
@@ -48,30 +49,21 @@
     return nil;
 }
 
+- (void)ChangeLastScore
+{
+self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.score];
+}
+
 
 - (void)setFlipCount:(int)flipCount
 {
+    [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
     _flipCount = flipCount;
     self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    /*
-    if ([sender.currentTitle length]) {
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
-        [sender setTitle:@"" forState:UIControlStateNormal];
-    }
-    else
-    {
-        Card *randCard = [self.deck drawRandomCard];
-        if (randCard) {
-            [sender setBackgroundImage:[UIImage imageNamed:@"CardFront"] forState:UIControlStateNormal];
-            [sender setTitle:randCard.contents forState:UIControlStateNormal];
-        }
-      
-    }
-     */
     NSUInteger chooseButtonIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:chooseButtonIndex];
     [self updateUI];
@@ -96,10 +88,34 @@
     return card.isChosen ? card.contents:@"";
 }
 
--(NSString *)backgroundImageForCard:(Card *)card
+- (NSString *)backgroundImageForCard:(Card *)card
 {
     return [UIImage imageNamed:card.isChosen ? @"CardFront" : @"cardback" ];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //[self usePreferredFronts];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferredFrontsChanges:) name:UIContentSizeCategoryDidChangeNotification object:nil];
+}
 
+- (void)preferredFrontsChanges:(NSNotification  *)notification
+{
+    [self usePreferredFronts];
+}
+
+- (void)usePreferredFronts
+{
+    self.FlipsLable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.scorelable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIContentSizeCategoryDidChangeNotification object:nil];
+    
+}
 @end
