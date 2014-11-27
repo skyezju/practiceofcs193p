@@ -65,4 +65,11 @@
     }
 }
 
+- (void)cardStyleChange
+{
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"CardStyleChanged" object:nil];
+}
+
+
 @end

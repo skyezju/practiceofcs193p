@@ -16,5 +16,6 @@
 
 + (NSArray *)validSuits;
 + (NSUInteger)maxRank;
+- (void)cardStyleChange;
 
 @end

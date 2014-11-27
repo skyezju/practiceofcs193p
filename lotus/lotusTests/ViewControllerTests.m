@@ -52,6 +52,20 @@ XCTestExpectation *expectation;
 }
 
 
-
+- (void)testAddCardAsyn{
+    ViewController * testView = [[ViewController alloc] init];
+    expectation = [self expectationWithDescription:@"Add card in background thread"];
+    id viewControllerMock = OCMPartialMock(testView);
+    OCMStub([viewControllerMock ChangeLastScore]).andCall(self, @selector(expectationFufill));
+    [testView setFlipCount:0];
+    [self waitForExpectationsWithTimeout:5
+                                 handler:^(NSError *error) {
+                                     // handler is called on _either_ success or failure
+                                     if (error != nil) {
+                                         XCTFail(@"timeout error: %@", error);
+                                     }
+                                 }];
+    
+}
 
 @end

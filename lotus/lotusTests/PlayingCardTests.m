@@ -42,5 +42,18 @@
     XCTAssertEqual([testCard match:@[matchCard]], 4, @"Rank match return 4");
 }
 
+-(void)testCardChangeStyle
+{
+    id observerMock = OCMObserverMock();
+    [[NSNotificationCenter defaultCenter] addMockObserver:observerMock name:@"CardStyleChanged" object:nil];
+    [[observerMock expect] notificationWithName:@"CardStyleChanged" object:nil];
+    PlayingCard * testPlayingCard = [[PlayingCard alloc] init];
+    [testPlayingCard cardStyleChange];
+    [observerMock verify];
+    [[NSNotificationCenter defaultCenter] removeObserver:observerMock];
+}
+    
+    
+
 @end
 

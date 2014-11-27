@@ -36,28 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lotus/ViewController.m"
-            timestampString = "438685248.616951"
+            timestampString = "438745753.551091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-preferredFrontsChanges:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "lotusTests/ViewControllerTests.m"
-            timestampString = "438686733.189136"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-expectationFufill"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-ChangeLastScore"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

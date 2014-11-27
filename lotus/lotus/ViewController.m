@@ -25,7 +25,6 @@
 @implementation ViewController
 
 - (IBAction)reStart:(UIButton *)sender {
-    [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
     [self setFlipCount:0];
     _game = nil;
     [self updateUI];
@@ -58,6 +57,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
 
 - (void)setFlipCount:(int)flipCount
 {
+    [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
     _flipCount = flipCount;
     self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
