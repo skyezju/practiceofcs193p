@@ -49,15 +49,15 @@
     return nil;
 }
 
-- (void)ChangeLastScore
+- (void)changeLastScore
 {
-self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.score];
+self.lastScore.text = [NSString stringWithFormat:@"Last Score: %ld", (long)self.game.score];
 }
 
 
 - (void)setFlipCount:(int)flipCount
 {
-    [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
+    [self performSelectorInBackground:@selector(changeLastScore) withObject:nil];
     _flipCount = flipCount;
     self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
@@ -78,7 +78,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scorelable.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+        self.scorelable.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
     }
 
 }

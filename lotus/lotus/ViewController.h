@@ -16,7 +16,7 @@
 - (Deck *)createDeck;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)preferredFrontsChanges:(NSNotification  *)notification;
-- (void)ChangeLastScore;
+- (void)changeLastScore;
 - (void)setFlipCount:(int)flipCount;
 
 @end
