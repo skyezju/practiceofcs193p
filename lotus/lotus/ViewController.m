@@ -11,8 +11,8 @@
 #import "CardMatchingGame.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *FlipsLable;
-@property (weak, nonatomic) IBOutlet UILabel *scorelable;
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastScore;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck *deck;
@@ -49,17 +49,17 @@
     return nil;
 }
 
-- (void)ChangeLastScore
+- (void)changeLastScore
 {
-self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.score];
+self.lastScore.text = [NSString stringWithFormat:@"Last Score: %ld", (long)self.game.score];
 }
 
 
 - (void)setFlipCount:(int)flipCount
 {
-    [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
+    [self performSelectorInBackground:@selector(changeLastScore) withObject:nil];
     _flipCount = flipCount;
-    self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
 }
 
@@ -78,7 +78,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scorelable.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
     }
 
 }
@@ -107,8 +107,8 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
 
 - (void)usePreferredFronts
 {
-    self.FlipsLable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    self.scorelable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.flipsLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.scoreLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 }
 
 
