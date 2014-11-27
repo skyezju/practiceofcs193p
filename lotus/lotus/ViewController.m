@@ -11,8 +11,8 @@
 #import "CardMatchingGame.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *FlipsLable;
+@property (weak, nonatomic) IBOutlet UILabel *scorelable;
 @property (weak, nonatomic) IBOutlet UILabel *lastScore;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck *deck;
@@ -59,7 +59,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
 {
     [self performSelectorInBackground:@selector(ChangeLastScore) withObject:nil];
     _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
+    self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
 }
 
@@ -78,7 +78,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+        self.scorelable.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     }
 
 }
@@ -107,8 +107,8 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
 
 - (void)usePreferredFronts
 {
-    self.flipsLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    self.scoreLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.FlipsLable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.scorelable.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 }
 
 

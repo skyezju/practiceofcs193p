@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Playing Card Game View Controller-->
@@ -179,7 +180,7 @@
                     <connections>
                         <outlet property="FlipsLable" destination="f4m-Pr-7hL" id="xb3-WP-Stm"/>
                         <outlet property="lastScore" destination="sFv-YU-RVe" id="jus-ig-77f"/>
-                        <outlet property="scoreLabel" destination="sKN-XX-vgV" id="Vb7-4w-sJX"/>
+                        <outlet property="scorelable" destination="sKN-XX-vgV" id="Rp3-tW-T5M"/>
                         <outletCollection property="cardButtons" destination="LX8-2H-tdO" id="3Lb-Id-E7L"/>
                         <outletCollection property="cardButtons" destination="qSJ-p1-qkh" id="eeh-tA-66O"/>
                         <outletCollection property="cardButtons" destination="voq-5F-CYV" id="iVW-1e-RT8"/>
