@@ -88,7 +88,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %d", self.game.sc
     return card.isChosen ? card.contents:@"";
 }
 
-- (NSString *)backgroundImageForCard:(Card *)card
+- (UIImage *)backgroundImageForCard:(Card *)card
 {
     return [UIImage imageNamed:card.isChosen ? @"CardFront" : @"cardback" ];
 }
