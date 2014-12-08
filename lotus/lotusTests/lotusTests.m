@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Deck.h"
+#import "OCMock.h"
+
 
 @interface lotusTests : XCTestCase
 
@@ -31,9 +34,6 @@
     XCTAssertEqual(0, 0);
 }
 
-- (void)testWhat
-{
-    XCTAssert(YES);
-}
-
 @end
+
+
