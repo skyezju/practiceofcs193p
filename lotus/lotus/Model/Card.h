@@ -18,9 +18,3 @@
 -(int)match:(NSArray *)otherCards;
 
 @end
-
-@protocol Card <NSObject>
-
-- (Card *)drawRandomCard;
-
-@end

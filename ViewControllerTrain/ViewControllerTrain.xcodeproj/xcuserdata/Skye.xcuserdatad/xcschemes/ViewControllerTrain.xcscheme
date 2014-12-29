@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31627A90190758C300079984"
-               BuildableName = "lotus.app"
-               BlueprintName = "lotus"
-               ReferencedContainer = "container:lotus.xcodeproj">
+               BlueprintIdentifier = "31094E3F19F61FB70038E454"
+               BuildableName = "ViewControllerTrain.app"
+               BlueprintName = "ViewControllerTrain"
+               ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31627AB1190758C300079984"
-               BuildableName = "lotusTests.xctest"
-               BlueprintName = "lotusTests"
-               ReferencedContainer = "container:lotus.xcodeproj">
+               BlueprintIdentifier = "31094E5819F61FB70038E454"
+               BuildableName = "ViewControllerTrainTests.xctest"
+               BlueprintName = "ViewControllerTrainTests"
+               ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31627AB1190758C300079984"
-               BuildableName = "lotusTests.xctest"
-               BlueprintName = "lotusTests"
-               ReferencedContainer = "container:lotus.xcodeproj">
+               BlueprintIdentifier = "31094E5819F61FB70038E454"
+               BuildableName = "ViewControllerTrainTests.xctest"
+               BlueprintName = "ViewControllerTrainTests"
+               ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31627A90190758C300079984"
-            BuildableName = "lotus.app"
-            BlueprintName = "lotus"
-            ReferencedContainer = "container:lotus.xcodeproj">
+            BlueprintIdentifier = "31094E3F19F61FB70038E454"
+            BuildableName = "ViewControllerTrain.app"
+            BlueprintName = "ViewControllerTrain"
+            ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31627A90190758C300079984"
-            BuildableName = "lotus.app"
-            BlueprintName = "lotus"
-            ReferencedContainer = "container:lotus.xcodeproj">
+            BlueprintIdentifier = "31094E3F19F61FB70038E454"
+            BuildableName = "ViewControllerTrain.app"
+            BlueprintName = "ViewControllerTrain"
+            ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "31627A90190758C300079984"
-            BuildableName = "lotus.app"
-            BlueprintName = "lotus"
-            ReferencedContainer = "container:lotus.xcodeproj">
+            BlueprintIdentifier = "31094E3F19F61FB70038E454"
+            BuildableName = "ViewControllerTrain.app"
+            BlueprintName = "ViewControllerTrain"
+            ReferencedContainer = "container:ViewControllerTrain.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

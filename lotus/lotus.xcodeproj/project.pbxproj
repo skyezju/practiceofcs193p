@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31094E7B19F65CA20038E454 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */; };
-		3116E9B21A26BF880030FB54 /* lotusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3116E9B11A26BF880030FB54 /* lotusTests.m */; };
+		31381C8D1A1B4B0200B63236 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */; };
+		31381C8F1A1B55DD00B63236 /* DeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31381C8E1A1B55DD00B63236 /* DeckTests.m */; };
 		3145DA1A19EE8657000847BB /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1919EE8657000847BB /* CardMatchingGame.m */; };
 		3145DA2419EE86A5000847BB /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1D19EE86A5000847BB /* Card.m */; };
 		3145DA2519EE86A5000847BB /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3145DA1F19EE86A5000847BB /* Deck.m */; };
@@ -27,6 +28,8 @@
 		31627AB5190758C300079984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31627A94190758C300079984 /* Foundation.framework */; };
 		31627AB6190758C300079984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31627A98190758C300079984 /* UIKit.framework */; };
 		31627ABE190758C300079984 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31627ABC190758C300079984 /* InfoPlist.strings */; };
+		31627AC0190758C300079984 /* lotusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31627ABF190758C300079984 /* lotusTests.m */; };
+		31CDC4821A1F18B000064033 /* CardMatchingGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */; };
 		31CDC4841A1F1AF500064033 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CDC4831A1F1AF500064033 /* libOCMock.a */; };
 		31CDC5091A1F1C5200064033 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CDC4941A1F1C5100064033 /* libOCMock.a */; };
 /* End PBXBuildFile section */
@@ -44,7 +47,8 @@
 /* Begin PBXFileReference section */
 		31094E7919F65CA20038E454 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardGameViewController.h; path = Model/PlayingCardGameViewController.h; sourceTree = "<group>"; };
 		31094E7A19F65CA20038E454 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardGameViewController.m; path = Model/PlayingCardGameViewController.m; sourceTree = "<group>"; };
-		3116E9B11A26BF880030FB54 /* lotusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lotusTests.m; sourceTree = "<group>"; };
+		31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTests.m; sourceTree = "<group>"; };
+		31381C8E1A1B55DD00B63236 /* DeckTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckTests.m; path = lotusTests/DeckTests.m; sourceTree = SOURCE_ROOT; };
 		3145DA1819EE8657000847BB /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 		3145DA1919EE8657000847BB /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		3145DA1C19EE86A5000847BB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		31627AB3190758C300079984 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		31627ABB190758C300079984 /* lotusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lotusTests-Info.plist"; sourceTree = "<group>"; };
 		31627ABD190758C300079984 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31627ABF190758C300079984 /* lotusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotusTests.m; sourceTree = "<group>"; };
+		31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGameTests.m; sourceTree = "<group>"; };
 		31CDC4831A1F1AF500064033 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = lotusTests/OCMock311/iOS/libOCMock.a; sourceTree = "<group>"; };
 		31CDC4941A1F1C5100064033 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		31CDC4961A1F1C5100064033 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
@@ -191,7 +197,10 @@
 		31627AB9190758C300079984 /* lotusTests */ = {
 			isa = PBXGroup;
 			children = (
-				3116E9B11A26BF880030FB54 /* lotusTests.m */,
+				31381C8E1A1B55DD00B63236 /* DeckTests.m */,
+				31381C8C1A1B4B0200B63236 /* PlayingCardTests.m */,
+				31CDC4811A1F18B000064033 /* CardMatchingGameTests.m */,
+				31627ABF190758C300079984 /* lotusTests.m */,
 				31CDC4921A1F1C5100064033 /* OCMock */,
 				31627ABA190758C300079984 /* Supporting Files */,
 			);
@@ -353,7 +362,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3116E9B21A26BF880030FB54 /* lotusTests.m in Sources */,
+				31CDC4821A1F18B000064033 /* CardMatchingGameTests.m in Sources */,
+				31381C8F1A1B55DD00B63236 /* DeckTests.m in Sources */,
+				31381C8D1A1B4B0200B63236 /* PlayingCardTests.m in Sources */,
+				31627AC0190758C300079984 /* lotusTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

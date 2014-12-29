@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>lotus.xcscheme</key>
+		<key>ViewControllerTrain.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31627A90190758C300079984</key>
+		<key>31094E3F19F61FB70038E454</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31627AB1190758C300079984</key>
+		<key>31094E5819F61FB70038E454</key>
 		<dict>
 			<key>primary</key>
 			<true/>

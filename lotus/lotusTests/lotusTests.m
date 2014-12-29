@@ -31,9 +31,4 @@
     XCTAssertEqual(0, 0);
 }
 
-- (void)testWhat
-{
-    XCTAssert(YES);
-}
-
 @end

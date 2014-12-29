@@ -168,18 +168,19 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ni-Q7-0KZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFv-YU-RVe">
-                                <rect key="frame" x="16" y="469" width="284" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Scf-qq-5Ow">
+                                <rect key="frame" x="99" y="433" width="123" height="29"/>
+                                <segments>
+                                    <segment title="2-cards"/>
+                                    <segment title="3-cards"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.78907444641097413" green="1" blue="0.95604082025348891" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="FlipsLable" destination="f4m-Pr-7hL" id="xb3-WP-Stm"/>
-                        <outlet property="lastScore" destination="sFv-YU-RVe" id="jus-ig-77f"/>
+                        <outlet property="modeID" destination="Scf-qq-5Ow" id="JSR-Zq-jx2"/>
                         <outlet property="scorelable" destination="sKN-XX-vgV" id="Rp3-tW-T5M"/>
                         <outletCollection property="cardButtons" destination="LX8-2H-tdO" id="3Lb-Id-E7L"/>
                         <outletCollection property="cardButtons" destination="qSJ-p1-qkh" id="eeh-tA-66O"/>
@@ -197,7 +198,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="304"/>
         </scene>
     </scenes>
     <resources>
