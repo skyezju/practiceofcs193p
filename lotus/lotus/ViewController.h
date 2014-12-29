@@ -14,5 +14,12 @@
 //protected
 //for subclasses
 - (Deck *)createDeck;
+<<<<<<< HEAD
+=======
+- (void)viewWillAppear:(BOOL)animated;
+- (void)preferredFrontsChanges:(NSNotification  *)notification;
+- (void)changeLastScore;
+- (void)setFlipCount:(int)flipCount;
+>>>>>>> FETCH_HEAD
 
 @end
