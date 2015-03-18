@@ -7,9 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Deck.h"
-#import "OCMock.h"
-
 
 @interface lotusTests : XCTestCase
 
@@ -35,5 +32,3 @@
 }
 
 @end
-
-

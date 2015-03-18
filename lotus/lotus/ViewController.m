@@ -11,13 +11,7 @@
 #import "CardMatchingGame.h"
 
 @interface ViewController ()
-<<<<<<< HEAD
 @property (weak, nonatomic) IBOutlet UILabel *FlipsLable;
-=======
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lastScore;
->>>>>>> FETCH_HEAD
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
@@ -54,23 +48,11 @@
     return nil;
 }
 
-<<<<<<< HEAD
 
 - (void)setFlipCount:(int)flipCount
 {
-=======
-- (void)changeLastScore
-{
-self.lastScore.text = [NSString stringWithFormat:@"Last Score: %ld", (long)self.game.score];
-}
-
-
-- (void)setFlipCount:(int)flipCount
-{
-    [self performSelectorInBackground:@selector(changeLastScore) withObject:nil];
->>>>>>> FETCH_HEAD
     _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
+    self.FlipsLable.text = [NSString stringWithFormat:@"Flips: %d",self.flipCount];
     NSLog(@"flipCount change to %d", self.flipCount);
 }
 
@@ -104,7 +86,7 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %ld", (long)self.
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
+        self.scorelable.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     }
 
 }
@@ -114,35 +96,10 @@ self.lastScore.text = [NSString stringWithFormat:@"Last Score: %ld", (long)self.
     return card.isChosen ? card.contents:@"";
 }
 
-<<<<<<< HEAD
 -(NSString *)backgroundImageForCard:(Card *)card
-=======
-- (UIImage *)backgroundImageForCard:(Card *)card
->>>>>>> FETCH_HEAD
 {
     return [UIImage imageNamed:card.isChosen ? @"CardFront" : @"cardback" ];
 }
 
-<<<<<<< HEAD
-=======
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    //[self usePreferredFronts];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferredFrontsChanges:) name:UIContentSizeCategoryDidChangeNotification object:nil];
-}
-
-- (void)preferredFrontsChanges:(NSNotification  *)notification
-{
-    [self usePreferredFronts];
-}
-
-- (void)usePreferredFronts
-{
-    self.flipsLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    self.scoreLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-}
-
->>>>>>> FETCH_HEAD
 
 @end

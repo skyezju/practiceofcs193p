@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "lotus/Model/Deck.m"
-            timestampString = "439180971.844628"
+            filePath = "lotusTests/CardMatchingGameTests.m"
+            timestampString = "438249584.399258"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-addCard:"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-hackDrawRandomCard"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

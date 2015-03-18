@@ -179,15 +179,9 @@
                         <color key="backgroundColor" red="0.78907444641097413" green="1" blue="0.95604082025348891" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-<<<<<<< HEAD
                         <outlet property="FlipsLable" destination="f4m-Pr-7hL" id="xb3-WP-Stm"/>
                         <outlet property="modeID" destination="Scf-qq-5Ow" id="JSR-Zq-jx2"/>
                         <outlet property="scorelable" destination="sKN-XX-vgV" id="Rp3-tW-T5M"/>
-=======
-                        <outlet property="flipsLabel" destination="f4m-Pr-7hL" id="SVm-iU-LPJ"/>
-                        <outlet property="lastScore" destination="sFv-YU-RVe" id="jus-ig-77f"/>
-                        <outlet property="scoreLabel" destination="sKN-XX-vgV" id="L0d-TK-AXf"/>
->>>>>>> FETCH_HEAD
                         <outletCollection property="cardButtons" destination="LX8-2H-tdO" id="3Lb-Id-E7L"/>
                         <outletCollection property="cardButtons" destination="qSJ-p1-qkh" id="eeh-tA-66O"/>
                         <outletCollection property="cardButtons" destination="voq-5F-CYV" id="iVW-1e-RT8"/>
